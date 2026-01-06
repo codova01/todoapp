@@ -69,7 +69,14 @@ export default function TodoApp() {
         </div>
         <div className="actions">
           <span>{todos.filter(t => !t.completed).length} items left</span>
-          <button onClick={clearCompleted}>Clear completed</button>
+          <button
+            className="clear"
+            onClick={clearCompleted}
+            disabled={todos.filter(t => t.completed).length === 0}
+            title="Clear completed todos"
+          >
+            Clear completed
+          </button>
         </div>
       </div>
     </div>
