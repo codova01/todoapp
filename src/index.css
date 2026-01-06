@@ -1,0 +1,18 @@
+:root{--bg:#f7f7f7;--card:#fff;--accent:#2563eb;--muted:#6b7280}
+*{box-sizing:border-box}html,body,#root{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;font-size:16px;background:var(--bg);color:#111}
+.app{max-width:520px;margin:6vh auto;padding:20px}
+.app h1{text-align:center;margin:0 0 18px}
+.todo-app{background:var(--card);border-radius:8px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+.add-form{display:flex;gap:8px}
+.add-form input{flex:1;padding:10px;border:1px solid #e6e6e6;border-radius:6px}
+.add-form button{padding:10px 12px;background:var(--accent);color:#fff;border:none;border-radius:6px}
+.todo-list{list-style:none;padding:0;margin:14px 0}
+.todo-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:6px}
+.todo-item label{display:flex;gap:8px;align-items:center;cursor:pointer}
+.todo-item.done span{text-decoration:line-through;color:var(--muted)}
+.todo-item .delete{background:transparent;border:0;color:#ef4444;font-size:20px;line-height:1;cursor:pointer}
+.controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px}
+.filters button{background:transparent;border:0;padding:6px 8px;border-radius:6px;cursor:pointer}
+.filters .active{background:#eef2ff;color:var(--accent)}
+.actions span{color:var(--muted)}
+.empty{text-align:center;color:var(--muted);padding:6px}
